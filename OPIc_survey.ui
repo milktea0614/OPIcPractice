@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SurveyDialog</class>
+ <widget class="QDialog" name="SurveyDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>OPIc 연습기 - 설문조사</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>data/winicon.jpg</normaloff>data/winicon.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:white</string>
+  </property>
+  <widget class="QGroupBox" name="surveyGB1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>431</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton::indicator::checked {background-color: red}
+QRadioButton::checked {color: red}</string>
+   </property>
+   <property name="title">
+    <string>1. 현재 어디에 종사하고 있나요?</string>
+   </property>
+   <widget class="QRadioButton" name="RB_employee">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>90</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>직장인</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="RB_student">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>20</y>
+      <width>90</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>학생</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="RB_jobseeker">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>일을 하지 않음</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="surveyGB2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>1171</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator::checked {background-color: red}
+QCheckBox::checked {color: red}
+</string>
+   </property>
+   <property name="title">
+    <string>2. 여가 활동으로 주로 무엇을 하나요? (2개 이상)</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>1151</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="survey_grid2">
+     <item row="0" column="2">
+      <widget class="QCheckBox" name="CB_billiards">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>당구치기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QCheckBox" name="CB_cafe">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>카페 가기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QCheckBox" name="CB_bar">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>술집/바 가기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QCheckBox" name="CB_studyfortest">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>시험대비 과정 수강하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="CB_sportshow">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>스포츠 관람</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QCheckBox" name="CB_museum">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>박물관가기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QCheckBox" name="CB_realityshow">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>리얼리티 쇼 시청하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QCheckBox" name="CB_concert">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>콘서트보기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QCheckBox" name="CB_spa">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>스파/마사지샵 가기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="CB_chess">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>체스하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QCheckBox" name="CB_sns">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>SNS에 글 올리기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QCheckBox" name="CB_tv">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>TV 시청하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QCheckBox" name="CB_cookingshow">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>요리 관련 프로그램 시청</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QCheckBox" name="CB_camping">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>캠핑하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QCheckBox" name="CB_houseImprovement">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>주거 개선</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QCheckBox" name="CB_textmessage">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>친구들과 문자대화 하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="CB_movie">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>영화보기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QCheckBox" name="CB_clubs">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>클럽/나이트 가기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QCheckBox" name="CB_beach">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>해변가기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QCheckBox" name="CB_shopping">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>쇼핑하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QCheckBox" name="CB_drive">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>차로 드라이브 하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QCheckBox" name="CB_park">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>공원가기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QCheckBox" name="CB_volunteer">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>자원봉사 하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QCheckBox" name="CB_game">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>게임하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QCheckBox" name="CB_news">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>뉴스를 보거나 듣기</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>1181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="midLineWidth">
+    <number>1</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>291</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:red</string>
+   </property>
+   <property name="text">
+    <string>2~5  문항에서 12개 이상을 선택하길 바랍니다</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="surveyGB3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>1171</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator::checked {background-color: red}
+QCheckBox::checked {color: red}
+</string>
+   </property>
+   <property name="title">
+    <string>3. 취미나 관심사는 무엇인가요? (1개 이상)</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>1151</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="survey_grid3">
+     <item row="0" column="3">
+      <widget class="QCheckBox" name="CB_newspaper">
+       <property name="text">
+        <string>신문읽기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QCheckBox" name="CB_dance">
+       <property name="text">
+        <string>춤추기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QCheckBox" name="CB_painting">
+       <property name="text">
+        <string>그림 그리기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QCheckBox" name="CB_music">
+       <property name="text">
+        <string>음악 감상하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="CB_blog">
+       <property name="text">
+        <string>여행잡지나 블로그 읽기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QCheckBox" name="CB_singing">
+       <property name="text">
+        <string>혼자 노래부르거나 합창하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QCheckBox" name="CB_musicInstument">
+       <property name="text">
+        <string>악기 연주하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="CB_readforkid">
+       <property name="text">
+        <string>아이에게 책 읽어주기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="CB_cook">
+       <property name="text">
+        <string>요리하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QCheckBox" name="CB_pet">
+       <property name="text">
+        <string>애완동물 기르기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QCheckBox" name="CB_book">
+       <property name="text">
+        <string>독서</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QCheckBox" name="CB_writing">
+       <property name="text">
+        <string>글쓰기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QCheckBox" name="CB_invest">
+       <property name="text">
+        <string>주식투자 하기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QCheckBox" name="CB_picture">
+       <property name="text">
+        <string>사진촬영하기</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="surveyGB4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>460</y>
+     <width>1171</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator::checked {background-color: red}
+QCheckBox::checked {color: red}</string>
+   </property>
+   <property name="title">
+    <string>4. 주로 어떤 운동을 즐기나요? (1개 이상)</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>1151</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="survey_grid4">
+     <item row="2" column="0">
+      <widget class="QCheckBox" name="CB_football">
+       <property name="text">
+        <string>미식축구</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="CB_basketball">
+       <property name="text">
+        <string>농구</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QCheckBox" name="CB_hiking">
+       <property name="text">
+        <string>하이킹/트래킹</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QCheckBox" name="CB_golf">
+       <property name="text">
+        <string>골프</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QCheckBox" name="CB_bicycle">
+       <property name="text">
+        <string>자전거</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QCheckBox" name="CB_vollyball">
+       <property name="text">
+        <string>배구</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QCheckBox" name="CB_baseball">
+       <property name="text">
+        <string>야구</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="CB_ski">
+       <property name="text">
+        <string>스키/스노우보드</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QCheckBox" name="CB_walk">
+       <property name="text">
+        <string>걷기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="CB_fishing">
+       <property name="text">
+        <string>낚시</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QCheckBox" name="CB_soccer">
+       <property name="text">
+        <string>축구</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QCheckBox" name="CB_tennis">
+       <property name="text">
+        <string>테니스</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QCheckBox" name="CB_iceskate">
+       <property name="text">
+        <string>아이스 스케이트</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QCheckBox" name="CB_workout">
+       <property name="text">
+        <string>헬스</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QCheckBox" name="CB_badminton">
+       <property name="text">
+        <string>배드민턴</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QCheckBox" name="CB_jog">
+       <property name="text">
+        <string>조깅</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QCheckBox" name="CB_taewondo">
+       <property name="text">
+        <string>태권도</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QCheckBox" name="CB_hockey">
+       <property name="text">
+        <string>하키</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="QCheckBox" name="CB_pingpong">
+       <property name="text">
+        <string>탁구</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QCheckBox" name="CB_cricket">
+       <property name="text">
+        <string>크리켓</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QCheckBox" name="CB_swimming">
+       <property name="text">
+        <string>수영</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QCheckBox" name="CB_yoga">
+       <property name="text">
+        <string>요가</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QCheckBox" name="CB_exerciseClass">
+       <property name="text">
+        <string>운동 수업 수강하기</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="surveyGB5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>620</y>
+     <width>1171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator::checked {background-color: red}
+QCheckBox::checked {color: red}</string>
+   </property>
+   <property name="title">
+    <string>5. 휴가나 출장을 다녀온 경험이 있나요? (1개 이상)</string>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>1151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="survey_horiz">
+     <item>
+      <widget class="QCheckBox" name="CB_domesticVacation">
+       <property name="text">
+        <string>국내 여행</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="CB_overseasVacation">
+       <property name="text">
+        <string>해외 여행</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="CB_homeVacation">
+       <property name="text">
+        <string>집에서 보내는 휴가</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="CB_domesticTravel">
+       <property name="text">
+        <string>국내 출장</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="CB_overseasTravel">
+       <property name="text">
+        <string>해외 출장</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="BTN_startTest">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>720</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(144, 159, 166)</string>
+   </property>
+   <property name="text">
+    <string>Start Test</string>
+   </property>
+  </widget>
+  <zorder>surveyGB1</zorder>
+  <zorder>surveyGB2</zorder>
+  <zorder>label</zorder>
+  <zorder>surveyGB3</zorder>
+  <zorder>surveyGB4</zorder>
+  <zorder>line</zorder>
+  <zorder>surveyGB5</zorder>
+  <zorder>BTN_startTest</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>RB_student</tabstop>
+  <tabstop>RB_employee</tabstop>
+  <tabstop>CB_movie</tabstop>
+  <tabstop>CB_beach</tabstop>
+  <tabstop>CB_billiards</tabstop>
+  <tabstop>CB_cookingshow</tabstop>
+  <tabstop>CB_clubs</tabstop>
+  <tabstop>CB_sportshow</tabstop>
+  <tabstop>CB_chess</tabstop>
+  <tabstop>CB_concert</tabstop>
+  <tabstop>CB_houseImprovement</tabstop>
+  <tabstop>BTN_startTest</tabstop>
+  <tabstop>CB_sns</tabstop>
+  <tabstop>CB_drive</tabstop>
+  <tabstop>CB_bar</tabstop>
+  <tabstop>CB_textmessage</tabstop>
+  <tabstop>CB_spa</tabstop>
+  <tabstop>CB_museum</tabstop>
+  <tabstop>CB_cafe</tabstop>
+  <tabstop>CB_studyfortest</tabstop>
+  <tabstop>CB_readforkid</tabstop>
+  <tabstop>CB_singing</tabstop>
+  <tabstop>CB_painting</tabstop>
+  <tabstop>CB_newspaper</tabstop>
+  <tabstop>CB_music</tabstop>
+  <tabstop>CB_cook</tabstop>
+  <tabstop>CB_blog</tabstop>
+  <tabstop>CB_musicInstument</tabstop>
+  <tabstop>CB_dance</tabstop>
+  <tabstop>CB_pet</tabstop>
+  <tabstop>CB_book</tabstop>
+  <tabstop>CB_writing</tabstop>
+  <tabstop>CB_invest</tabstop>
+  <tabstop>CB_picture</tabstop>
+  <tabstop>CB_basketball</tabstop>
+  <tabstop>CB_golf</tabstop>
+  <tabstop>CB_bicycle</tabstop>
+  <tabstop>CB_hiking</tabstop>
+  <tabstop>CB_baseball</tabstop>
+  <tabstop>CB_vollyball</tabstop>
+  <tabstop>CB_ski</tabstop>
+  <tabstop>CB_football</tabstop>
+  <tabstop>CB_walk</tabstop>
+  <tabstop>CB_fishing</tabstop>
+  <tabstop>CB_soccer</tabstop>
+  <tabstop>CB_tennis</tabstop>
+  <tabstop>CB_iceskate</tabstop>
+  <tabstop>CB_workout</tabstop>
+  <tabstop>CB_badminton</tabstop>
+  <tabstop>CB_jog</tabstop>
+  <tabstop>CB_taewondo</tabstop>
+  <tabstop>CB_hockey</tabstop>
+  <tabstop>CB_pingpong</tabstop>
+  <tabstop>CB_cricket</tabstop>
+  <tabstop>CB_swimming</tabstop>
+  <tabstop>CB_yoga</tabstop>
+  <tabstop>CB_exerciseClass</tabstop>
+  <tabstop>CB_domesticVacation</tabstop>
+  <tabstop>CB_overseasVacation</tabstop>
+  <tabstop>CB_homeVacation</tabstop>
+  <tabstop>CB_domesticTravel</tabstop>
+  <tabstop>CB_overseasTravel</tabstop>
+  <tabstop>CB_park</tabstop>
+  <tabstop>CB_game</tabstop>
+  <tabstop>CB_news</tabstop>
+  <tabstop>CB_volunteer</tabstop>
+  <tabstop>CB_camping</tabstop>
+  <tabstop>CB_tv</tabstop>
+  <tabstop>CB_realityshow</tabstop>
+  <tabstop>CB_shopping</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
