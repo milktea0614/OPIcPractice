@@ -5,7 +5,7 @@
 
 ----
 #### 사용한 라이브러리
-openpyxl, PyQt5, gtts, pyaudio, playsound
+openpyxl, PyQt5, gtts, pyaudio, playsound, pyinstaller
 
 ---
 #### 사용을 위한 제한 조건
